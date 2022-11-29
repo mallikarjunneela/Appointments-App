@@ -1,14 +1,14 @@
 import './index.css'
 
 const AppointmentItem = props => {
-  const {appointmentDetails, toggleIsStarted} = props
+  const {appointmentDetails, isToggleStarted} = props
   const {id, title, date, isStarted} = appointmentDetails
   const starImageUrl = isStarted
     ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
 
   const onClickStar = () => {
-    toggleIsStarted(id)
+    isToggleStarted(id)
   }
 
   return (
