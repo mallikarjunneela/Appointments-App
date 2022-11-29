@@ -125,7 +125,7 @@ class Appointments extends Component {
               <h1 className="appointments-heading">Appointments</h1>
               <button
                 type="button"
-                className={`filter-style ${filterClassName}`}
+                className={`filter-style ${filteredClassName}`}
                 onClick={this.onFilter}
               >
                 Starred
